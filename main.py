@@ -40,27 +40,27 @@ def main():
         return
 
     """ first task """
-    # # create instance from user class
-    # model = User(num_users, file_name)
-    #
-    # # start time
-    # start_time = time.time()
-    #
-    # print('Starting user generation...')
-    #
-    # # add header fields
-    # model.add_header_fields_to_csv_file()
-    #
-    # # factory create
-    # model.add_generated_user_with_faker_to_csv_file()
-    #
-    # # end time
-    # end_time = time.time()
-    # duration = end_time - start_time
-    #
-    #
-    # print(f"Finished generating users and outputting CSV file: {file_name}")
-    # print(f'Duration for generated users: {duration :.5f} seconds\n')
+    # create instance from user class
+    model = User(num_users, file_name)
+
+    # start time
+    start_time = time.time()
+
+    print('Starting user generation...')
+
+    # add header fields
+    model.add_header_fields_to_csv_file()
+
+    # factory create
+    model.add_generated_user_with_faker_to_csv_file()
+
+    # end time
+    end_time = time.time()
+    duration = end_time - start_time
+
+
+    print(f"Finished generating users and outputting CSV file: {file_name}")
+    print(f'Duration for generated users: {duration :.5f} seconds\n')
 
     """ second task """
 
